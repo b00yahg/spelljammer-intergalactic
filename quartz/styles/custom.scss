@@ -164,15 +164,21 @@ textarea {
 
 /* --- 5. Desktop --------------------------------------------------------- */
 
-html {
-  background: var(--w98-desktop);
+html,
+body {
+  background-color: var(--w98-desktop) !important;
+  background-image: var(--w98-wallpaper) !important;
+  background-repeat: repeat !important;
+  background-attachment: fixed !important;
+}
+
+#quartz-root,
+#quartz-body,
+.page > #quartz-body {
+  background: transparent !important;
 }
 
 body {
-  background-color: var(--w98-desktop);
-  background-image: var(--w98-wallpaper);
-  background-repeat: repeat;
-  background-attachment: fixed;
   color: var(--w98-text);
   font-family: var(--w98-doc);
   font-size: 12px;
@@ -257,11 +263,20 @@ article h6 {
   font-style: normal;
 }
 
-a {
+a,
+a.internal,
+article a,
+article a.internal,
+.center a.internal {
   color: var(--w98-link);
   text-decoration: underline;
-  background: transparent;
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
 
+a {
   &:visited { color: var(--w98-visited); }
   &:hover { color: var(--w98-link); }
   &:focus-visible { outline: 1px dotted var(--w98-link); }
@@ -340,37 +355,33 @@ blockquote {
 /* --- 8. Sidebar: title bars, tree view ---------------------------------- */
 
 .page-title {
-  @include titlebar;
-  font-size: 11px;
+  background: none;
+  box-shadow: none;
+  padding: 0 0 0.25rem;
+  margin: 0;
 
   & a {
-    color: var(--w98-title-text);
+    color: #ffffff;
     text-decoration: none;
     font-family: var(--w98-ui);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     -webkit-font-smoothing: none;
+    text-shadow: 1px 1px 0 #000, 0 0 3px #000;
   }
 }
 
-.explorer .explorer-toggle.desktop-explorer,
-.explorer .explorer-toggle.mobile-explorer {
-  @include titlebar(false);
-  width: 100%;
-  box-sizing: border-box;
-  padding: 3px 5px;
-  box-shadow: none;
-  background: linear-gradient(90deg, var(--w98-title-a), var(--w98-title-b));
+/* no header at all, and never collapsed */
+.explorer .explorer-toggle {
+  display: none !important;
+}
 
-  & h2 {
-    margin: 0;
-    font-family: var(--w98-ui);
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--w98-title-text);
-    -webkit-font-smoothing: none;
-  }
-  & svg { stroke: var(--w98-title-text); }
+.explorer .explorer-content,
+.explorer .explorer-ul {
+  display: block !important;
+  max-height: none !important;
+  overflow: visible !important;
+  visibility: visible !important;
 }
 
 /* 98.css ul.tree-view */
@@ -414,7 +425,7 @@ blockquote {
   & a,
   & .nav-folder-title,
   & .folder-button {
-    color: #000000;
+    color: #006400;
     text-decoration: none;
     font-family: var(--w98-ui);
     font-size: 11px;
@@ -597,7 +608,10 @@ input.search-bar,
 input[type="text"],
 input[type="search"],
 textarea {
-  @include sunken;
+  box-shadow:
+    inset 1px 1px var(--w98-shadow),
+    inset -1px -1px var(--w98-light),
+    inset 2px 2px var(--w98-face);
   background: var(--w98-field);
   color: var(--w98-text);
   border: none;
