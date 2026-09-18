@@ -1,11 +1,10 @@
 @use "./variables.scss" as *;
 
 /* ==========================================================================
-   Spelljammer: Intergalactic - Windows 98 theme
-   Bevel recipes, scrollbars and title-bar glyphs are lifted verbatim from
-   98.css v0.1.21 by jdan (MIT). Colors are parameterised so the same
-   geometry serves both the classic grey scheme and the Eggplant dark scheme.
-   Cursors: Alien (Purple) by AJaxx, personal non-commercial use.
+   Spelljammer: Intergalactic - Windows 98
+   Bevels, scrollbars, tree-view, progress indicators and title-bar glyphs are
+   taken from 98.css v0.1.21 by jdan (MIT). Light scheme only.
+   Cursors: Alien (Purple) by AJaxx. Personal non-commercial use.
    ========================================================================== */
 
 /* --- 1. Fonts ----------------------------------------------------------- */
@@ -27,11 +26,12 @@
     url("static/fonts/ms_sans_serif_bold.woff") format("woff");
 }
 
-/* --- 2. Palette --------------------------------------------------------- */
+/* --- 2. Palette (98.css values, light only) ----------------------------- */
 
-:root {
-  /* the 98.css palette, named */
+:root,
+:root[saved-theme="dark"] {
   --w98-desktop: #008080;
+  --w98-wallpaper: none;
   --w98-surface: #c0c0c0;
   --w98-face: #dfdfdf;
   --w98-light: #ffffff;
@@ -39,7 +39,7 @@
   --w98-frame: #0a0a0a;
   --w98-field: #ffffff;
   --w98-text: #222222;
-  --w98-text-dim: #808080;
+  --w98-dim: #808080;
   --w98-title-a: #000080;
   --w98-title-b: #1084d0;
   --w98-title-text: #ffffff;
@@ -48,10 +48,8 @@
   --w98-visited: #551a8b;
 
   --w98-ui: "Pixelated MS Sans Serif", "MS Sans Serif", Tahoma, sans-serif;
-  --w98-body: Verdana, Geneva, Tahoma, sans-serif;
   --w98-mono: "Courier New", Courier, monospace;
 
-  /* remap Quartz's own tokens onto it */
   --light: var(--w98-surface);
   --lightgray: var(--w98-face);
   --gray: var(--w98-shadow);
@@ -59,36 +57,14 @@
   --dark: var(--w98-text);
   --secondary: var(--w98-title-a);
   --tertiary: var(--w98-title-b);
-  --highlight: rgba(0, 0, 128, 0.12);
+  --highlight: rgba(0, 0, 128, 0.1);
   --textHighlight: #ffff00aa;
-  --bodyFont: var(--w98-body);
+  --bodyFont: var(--w98-ui);
   --headerFont: var(--w98-ui);
   --codeFont: var(--w98-mono);
 }
 
-/* Eggplant, one of the schemes Windows 98 actually shipped */
-:root[saved-theme="dark"] {
-  --w98-desktop: #241d29;
-  --w98-surface: #55505e;
-  --w98-face: #6d6779;
-  --w98-light: #938ca1;
-  --w98-shadow: #342f3d;
-  --w98-frame: #120f17;
-  --w98-field: #2b2633;
-  --w98-text: #ece8f2;
-  --w98-text-dim: #938ca1;
-  --w98-title-a: #3b2a4d;
-  --w98-title-b: #8a63a8;
-  --w98-title-text: #ffffff;
-  --w98-select: #6b4a86;
-  --w98-link: #9fc9ff;
-  --w98-visited: #d0a8ff;
-
-  --highlight: rgba(255, 255, 255, 0.08);
-  --textHighlight: #8a63a888;
-}
-
-/* --- 3. Bevel recipes (98.css geometry, our colors) --------------------- */
+/* --- 3. 98.css geometry, as mixins -------------------------------------- */
 
 @mixin raised {
   box-shadow:
@@ -111,17 +87,29 @@
     inset -2px -2px var(--w98-face),
     inset 2px 2px var(--w98-frame);
 }
-@mixin window-frame {
+@mixin status-sunken {
+  box-shadow:
+    inset -1px -1px var(--w98-face),
+    inset 1px 1px var(--w98-shadow);
+}
+@mixin window {
   background: var(--w98-surface);
+  border: none;
+  border-radius: 0;
+  padding: 3px;
   box-shadow:
     inset -1px -1px var(--w98-frame),
     inset 1px 1px var(--w98-face),
     inset -2px -2px var(--w98-shadow),
     inset 2px 2px var(--w98-light);
-  border-radius: 0;
-  padding: 3px;
 }
-@mixin titlebar {
+
+/* a real title bar, with the three buttons drawn from 98.css glyphs */
+@mixin titlebar($buttons: true) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
   background: linear-gradient(90deg, var(--w98-title-a), var(--w98-title-b));
   color: var(--w98-title-text);
   font-family: var(--w98-ui);
@@ -129,11 +117,40 @@
   font-weight: 700;
   -webkit-font-smoothing: none;
   letter-spacing: 0;
+  line-height: 1.3;
   padding: 3px 2px 3px 3px;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-radius: 0;
+  text-align: left;
+
+  @if $buttons {
+    &::after {
+      content: "";
+      flex: 0 0 auto;
+      display: flex;
+      width: 54px;
+      height: 14px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-image:
+        url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E"),
+        linear-gradient(var(--w98-surface), var(--w98-surface)),
+        linear-gradient(var(--w98-surface), var(--w98-surface)),
+        linear-gradient(var(--w98-surface), var(--w98-surface));
+      background-position:
+        4px 8px, 3px 2px, 4px 3px,
+        0 0, 19px 0, 38px 0;
+      background-size:
+        auto, auto, auto,
+        16px 14px, 16px 14px, 16px 14px;
+      box-shadow:
+        /* left button */
+        inset -1px -1px var(--w98-frame), inset 1px 1px var(--w98-light),
+        inset -2px -2px var(--w98-shadow), inset 2px 2px var(--w98-face);
+    }
+  }
 }
 
 /* --- 4. Cursors --------------------------------------------------------- */
@@ -145,123 +162,300 @@ body {
 a,
 button,
 summary,
-.callout-title,
-[role="button"],
 select,
+label,
+.callout-title,
+.folder-button,
+.explorer-toggle,
+[role="button"],
 input[type="checkbox"] {
   cursor: url("static/cursors/link.cur"), pointer;
 }
 input[type="text"],
 input[type="search"],
-textarea,
-p,
-li,
-td,
-blockquote {
+textarea {
   cursor: url("static/cursors/text.cur"), text;
 }
-a,
-button,
-summary,
-.callout-title,
-[role="button"] {
-  p &,
-  li &,
-  td & {
-    cursor: url("static/cursors/link.cur"), pointer;
-  }
-}
 
-/* --- 5. Page shell ------------------------------------------------------ */
+/* --- 5. Desktop --------------------------------------------------------- */
 
 html {
   background: var(--w98-desktop);
 }
 
 body {
-  background: var(--w98-desktop);
+  background-color: var(--w98-desktop);
+  background-image: var(--w98-wallpaper);
+  background-repeat: repeat;
+  background-attachment: fixed;
   color: var(--w98-text);
-  font-family: var(--w98-body);
-  font-size: 15px;
-  line-height: 1.65;
+  font-family: var(--w98-ui);
+  -webkit-font-smoothing: none;
+  font-size: 13px;
+  line-height: 1.75;
 }
 
 .page {
-  & .sidebar,
-  & .center,
-  & .page-footer {
-    color: var(--w98-text);
+  & #quartz-body {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  /* the right rail is just a tray, its children are the windows */
+  & .right.sidebar {
+    background: transparent;
+    box-shadow: none;
+    gap: 0.75rem;
+  }
+
+  & .left.sidebar {
+    @include window;
+    align-content: flex-start;
+    box-sizing: border-box;
+    gap: 0.5rem;
   }
 
   & .center {
-    @include window-frame;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  & .sidebar.left,
-  & .sidebar.right {
-    @include window-frame;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    @include window;
     box-sizing: border-box;
   }
 }
 
-/* inner document surface, so long recaps read on white rather than grey */
-.center > article,
-.center > .popover-hint > article {
-  @include sunken;
-  background: var(--w98-field);
-  padding: 1rem 1.25rem;
-  margin: 0;
+/* --- 6. The article, as a window ---------------------------------------- */
+
+.center {
+  & > .page-header {
+    margin: 0;
+    padding: 0;
+  }
+
+  & h1.article-title {
+    @include titlebar;
+    margin: 0 0 3px;
+    font-size: 11px;
+  }
+
+  & .content-meta {
+    @include status-sunken;
+    background: var(--w98-surface);
+    font-family: var(--w98-ui);
+    font-size: 11px;
+    color: var(--w98-text);
+    margin: 0 0 3px;
+    padding: 2px 4px;
+    font-style: normal;
+  }
+
+  & > article {
+    @include sunken;
+    background: var(--w98-field);
+    padding: 1rem 1.1rem;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  & > .page-footer {
+    @include status-sunken;
+    background: var(--w98-surface);
+    font-family: var(--w98-ui);
+    font-size: 11px;
+    margin: 3px 0 0;
+    padding: 2px 4px;
+  }
 }
 
-/* --- 6. Typography ------------------------------------------------------ */
+/* --- 7. Sidebar panels, each its own window ----------------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.page-title {
+  @include titlebar;
+  margin: 0;
+  font-size: 11px;
+
+  & a {
+    color: var(--w98-title-text);
+    text-decoration: none;
+    font-family: var(--w98-ui);
+    font-weight: 700;
+  }
+}
+
+.explorer,
+.graph,
+.toc,
+.backlinks {
+  @include window;
+  box-sizing: border-box;
+  width: 100%;
   font-family: var(--w98-ui);
   -webkit-font-smoothing: none;
-  color: var(--w98-text);
-  font-weight: 700;
-  line-height: 1.3;
+  font-size: 11px;
 }
 
-h1 { font-size: 1.9rem; }
-h2 { font-size: 1.45rem; }
-h3 { font-size: 1.2rem; }
-h4, h5, h6 { font-size: 1rem; }
+/* their headings become title bars */
+.explorer .explorer-toggle,
+.graph > h3,
+.toc > button,
+.toc > h3,
+.backlinks > h3 {
+  @include titlebar(false);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 3px;
+  padding: 3px 4px;
+  border: none;
+  box-shadow: none;
+  font-size: 11px;
 
-article p,
-article li {
-  font-family: var(--w98-body);
-  font-size: 15px;
-  line-height: 1.7;
+  & h2,
+  & h3 {
+    margin: 0;
+    font-size: 11px;
+    font-family: var(--w98-ui);
+    color: var(--w98-title-text);
+    font-weight: 700;
+  }
+
+  & svg {
+    stroke: var(--w98-title-text);
+    fill: none;
+  }
+}
+
+/* --- 8. Explorer as a tree view ----------------------------------------- */
+
+.explorer-content,
+.graph-outer,
+#toc-content,
+.backlinks ul.overflow {
+  @include sunken;
+  background: var(--w98-field);
+  padding: 6px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.explorer ul.explorer-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & ul {
+    border-left: 1px dotted var(--w98-shadow);
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+}
+
+.explorer a.nav-file-title,
+.explorer .nav-folder-title {
+  color: var(--w98-text);
+  text-decoration: none;
+  font-family: var(--w98-ui);
+  font-size: 11px;
+  display: inline-block;
+  padding: 0 2px;
+
+  &:hover {
+    background: var(--w98-select);
+    color: var(--w98-title-text);
+  }
+}
+
+.explorer .folder-button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: var(--w98-text);
+  font-family: var(--w98-ui);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* --- 9. Callouts, the headline feature ---------------------------------- */
+
+.callout {
+  @include window;
+  margin: 1.25rem 0;
+  overflow: visible;
+
+  & > .callout-title {
+    @include titlebar;
+    margin: 0 0 3px;
+
+    & .callout-icon,
+    & .fold-callout-icon {
+      filter: brightness(0) invert(1);
+      flex: 0 0 auto;
+    }
+
+    & .callout-title-inner {
+      flex: 1 1 auto;
+      color: var(--w98-title-text);
+      font-family: var(--w98-ui);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: none;
+    }
+  }
+
+  & > .callout-content {
+    @include sunken;
+    background: var(--w98-field);
+    margin: 0;
+    padding: 0.6rem 0.8rem;
+
+    & > :first-child { margin-top: 0; }
+    & > :last-child { margin-bottom: 0; }
+  }
+
+  &.is-collapsed > .callout-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+  }
+}
+
+/* --- 10. Typography ------------------------------------------------------ */
+
+article {
+  font-family: var(--w98-ui);
+  -webkit-font-smoothing: none;
+  font-size: 13px;
+  line-height: 1.8;
+
+  & h1, & h2, & h3, & h4, & h5, & h6 {
+    font-family: var(--w98-ui);
+    font-weight: 700;
+    color: var(--w98-text);
+    line-height: 1.3;
+    -webkit-font-smoothing: none;
+  }
+
+  & h1 { font-size: 20px; }
+  & h2 { font-size: 17px; }
+  & h3 { font-size: 15px; }
+  & h4, & h5, & h6 { font-size: 13px; }
+
+  /* section headings get the engraved divider Windows used in dialogs */
+  & h2 {
+    padding-bottom: 4px;
+    box-shadow:
+      inset 0 -2px var(--w98-light),
+      inset 0 -3px var(--w98-shadow);
+  }
 }
 
 a {
   color: var(--w98-link);
   text-decoration: underline;
-  background-color: transparent;
+  background: transparent;
 
-  &:visited {
-    color: var(--w98-visited);
-  }
-  &:hover {
-    color: var(--w98-link);
-    text-decoration: underline;
-  }
-  &:focus-visible {
-    outline: 1px dotted var(--w98-text);
-    outline-offset: 1px;
-  }
+  &:visited { color: var(--w98-visited); }
+  &:hover { color: var(--w98-link); text-decoration: underline; }
+  &:focus-visible { outline: 1px dotted var(--w98-link); }
   &.internal {
-    background-color: transparent;
+    background: transparent;
     padding: 0;
     border-radius: 0;
   }
@@ -277,85 +471,19 @@ hr {
   margin: 1.5rem 0;
 }
 
-/* --- 7. Read-aloud blocks ----------------------------------------------- */
-
+/* read-aloud text sits in a sunken field, like a dialog's message area */
 blockquote {
   @include sunken;
   background: var(--w98-surface);
   border-left: none;
+  border-radius: 0;
   margin: 1rem 0;
-  padding: 0.75rem 1rem;
-  font-family: var(--w98-body);
+  padding: 0.7rem 0.9rem;
   font-style: normal;
   color: var(--w98-text);
 }
 
-/* --- 8. Callouts as windows --------------------------------------------- */
-
-.callout {
-  @include window-frame;
-  border: none;
-  border-radius: 0;
-  padding: 3px;
-  margin: 1.25rem 0;
-  overflow: visible;
-
-  & > .callout-title {
-    @include titlebar;
-    gap: 0.5rem;
-
-    & .callout-icon,
-    & .fold-callout-icon {
-      filter: brightness(0) invert(1);
-      flex: 0 0 auto;
-    }
-
-    & .callout-title-inner {
-      color: var(--w98-title-text);
-      font-family: var(--w98-ui);
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: none;
-      flex: 1 1 auto;
-    }
-
-    /* the close button, non-functional, purely set dressing */
-    &::after {
-      content: "";
-      display: block;
-      width: 16px;
-      height: 14px;
-      flex: 0 0 auto;
-      background-color: var(--w98-surface);
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: top 3px left 4px;
-      box-shadow:
-        inset -1px -1px var(--w98-frame),
-        inset 1px 1px var(--w98-light),
-        inset -2px -2px var(--w98-shadow),
-        inset 2px 2px var(--w98-face);
-    }
-  }
-
-  & > .callout-content {
-    background: var(--w98-field);
-    margin: 3px 0 0;
-    padding: 0.6rem 0.8rem;
-    @include sunken;
-
-    & > :first-child { margin-top: 0; }
-    & > :last-child { margin-bottom: 0; }
-  }
-
-  &.is-collapsed > .callout-content {
-    padding-top: 0;
-    padding-bottom: 0;
-    box-shadow: none;
-  }
-}
-
-/* --- 9. Tables as Explorer panes ---------------------------------------- */
+/* --- 11. Tables as Explorer list views ---------------------------------- */
 
 .table-container,
 .bases-table-container {
@@ -363,6 +491,7 @@ blockquote {
   background: var(--w98-field);
   padding: 2px;
   overflow-x: auto;
+  margin: 1rem 0;
 }
 
 article table,
@@ -373,16 +502,18 @@ article table,
   font-size: 11px;
   -webkit-font-smoothing: none;
   width: 100%;
+  text-align: left;
 
   & > thead > tr > th {
+    @include raised;
     background: var(--w98-surface);
     color: var(--w98-text);
     font-weight: 400;
-    text-align: left;
     height: 18px;
     padding: 0 6px;
     border: none;
-    @include raised;
+    position: sticky;
+    top: 0;
   }
 
   & > tbody > tr > td {
@@ -391,97 +522,69 @@ article table,
     color: var(--w98-text);
   }
 
-  & > tbody > tr:hover > td {
-    background: var(--w98-select);
-    color: var(--w98-title-text);
-  }
-  & > tbody > tr:hover a {
-    color: var(--w98-title-text);
-  }
+  & > tbody > tr:hover > td { background: var(--w98-select); color: var(--w98-title-text); }
+  & > tbody > tr:hover a { color: var(--w98-title-text); }
 }
 
-/* --- 10. Code ------------------------------------------------------------ */
+/* --- 12. Progress indicators -------------------------------------------- */
 
-pre,
-code {
-  font-family: var(--w98-mono);
+.progress-indicator {
+  appearance: none;
+  border: none;
   border-radius: 0;
+  box-sizing: border-box;
+  box-shadow:
+    inset -2px -2px var(--w98-face),
+    inset 2px 2px var(--w98-shadow);
+  height: 28px;
+  padding: 4px;
+  position: relative;
+  margin: 0.25rem 0 0.6rem;
+  background: var(--w98-surface);
+
+  & > .progress-indicator-bar {
+    background-color: var(--w98-title-a);
+    display: block;
+    height: 100%;
+  }
+
+  &.segmented > .progress-indicator-bar {
+    background-color: transparent;
+    background-image: linear-gradient(
+      90deg,
+      var(--w98-title-a) 16px,
+      transparent 0 2px
+    );
+    background-repeat: repeat;
+    background-size: 18px 100%;
+  }
 }
+
+/* --- 13. Code ----------------------------------------------------------- */
 
 pre {
   @include sunken;
   background: var(--w98-field);
   border: none;
+  border-radius: 0;
   padding: 10px 8px;
+  font-family: var(--w98-mono);
 }
 
 code {
+  font-family: var(--w98-mono);
   background: var(--w98-surface);
   color: var(--w98-text);
+  border-radius: 0;
   padding: 0 3px;
 }
 
-/* --- 11. Sidebar furniture ---------------------------------------------- */
+/* --- 14. Inputs, buttons, search ---------------------------------------- */
 
-.page-title,
-.page-title a {
-  font-family: var(--w98-ui);
-  -webkit-font-smoothing: none;
-  color: var(--w98-text);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.explorer,
-.toc,
-.backlinks,
-.graph {
-  font-family: var(--w98-ui);
-  -webkit-font-smoothing: none;
-  font-size: 11px;
-}
-
-.explorer-content,
-#toc-content,
-.backlinks ul {
-  @include sunken;
-  background: var(--w98-field);
-  padding: 6px;
-  margin-top: 4px;
-}
-
-.explorer-content a,
-#toc-content a,
-.backlinks a {
-  color: var(--w98-text);
-  text-decoration: none;
-
-  &:hover {
-    background: var(--w98-select);
-    color: var(--w98-title-text);
-  }
-}
-
-.explorer-toggle,
-.toc-header,
-.backlinks h3,
-.graph h3,
-.explorer h2,
-.toc h3 {
-  font-family: var(--w98-ui);
-  -webkit-font-smoothing: none;
-  color: var(--w98-text);
-  font-size: 11px;
-  font-weight: 700;
-}
-
-/* --- 12. Inputs and buttons --------------------------------------------- */
-
+input.search-bar,
 input[type="text"],
 input[type="search"],
-textarea,
-.search-bar,
-#search-bar {
+textarea {
   @include sunken;
   background: var(--w98-field);
   color: var(--w98-text);
@@ -492,43 +595,36 @@ textarea,
   font-size: 11px;
   padding: 4px 5px;
 
-  &:focus {
-    outline: none;
-  }
+  &:focus { outline: none; }
 }
 
-button,
-.darkmode,
-.readermode,
-.search > button,
-.explorer-toggle {
+button.search-button,
+button.darkmode,
+button.readermode,
+button.global-graph-icon {
+  @include raised;
   background: var(--w98-surface);
   color: var(--w98-text);
   border: none;
   border-radius: 0;
   font-family: var(--w98-ui);
-  -webkit-font-smoothing: none;
   font-size: 11px;
-  @include raised;
+  min-height: 23px;
+  padding: 0 8px;
 
-  &:active {
-    @include pressed;
-  }
+  &:active { @include pressed; }
+
+  & svg { stroke: var(--w98-text); }
+  & p { color: var(--w98-text); font-family: var(--w98-ui); font-size: 11px; }
 }
 
-.darkmode svg,
-.readermode svg,
-.search svg {
-  fill: var(--w98-text);
-  stroke: var(--w98-text);
-}
+/* dark mode is off, so hide its toggle */
+button.darkmode { display: none; }
 
-/* --- 13. Popovers, search results, footer ------------------------------- */
-
-.popover > .popover-inner,
-#search-container .search-space,
-.search-layout {
-  @include window-frame;
+.search-space,
+.search-layout,
+.popover > .popover-inner {
+  @include window;
   border: none;
   border-radius: 0;
 }
@@ -538,7 +634,7 @@ button,
   border: none;
   border-radius: 0;
   font-family: var(--w98-ui);
-  -webkit-font-smoothing: none;
+  font-size: 11px;
 
   &:hover,
   &:focus,
@@ -548,42 +644,28 @@ button,
   }
 }
 
-.page-footer,
+/* --- 15. Footer --------------------------------------------------------- */
+
 footer {
   font-family: var(--w98-ui);
-  -webkit-font-smoothing: none;
   font-size: 11px;
   color: var(--w98-text);
-}
-
-.content-meta,
-.breadcrumb-container {
-  font-family: var(--w98-ui);
   -webkit-font-smoothing: none;
-  font-size: 11px;
-  color: var(--w98-text-dim);
 }
 
-/* --- 14. Images --------------------------------------------------------- */
+/* --- 16. Images --------------------------------------------------------- */
 
 article img {
   border-radius: 0;
-  image-rendering: pixelated;
 }
 
-/* --- 15. Scrollbars, straight from 98.css ------------------------------- */
+/* --- 17. Scrollbars, from 98.css ---------------------------------------- */
 
-::-webkit-scrollbar {
-  width: 16px;
-}
-::-webkit-scrollbar:horizontal {
-  height: 17px;
-}
-::-webkit-scrollbar-corner {
-  background: var(--w98-face);
-}
+::-webkit-scrollbar { width: 16px; }
+::-webkit-scrollbar:horizontal { height: 17px; }
+::-webkit-scrollbar-corner { background: var(--w98-face); }
 ::-webkit-scrollbar-track {
-  background: var(--w98-surface);
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='2' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1 0H0v1h1v1h1V1H1V0z' fill='silver'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 0H1v1H0v1h1V1h1V0z' fill='%23fff'/%3E%3C/svg%3E");
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--w98-face);
@@ -594,23 +676,10 @@ article img {
     inset 2px 2px var(--w98-face);
 }
 
-/* --- 16. Mobile --------------------------------------------------------- */
+/* --- 18. Mobile --------------------------------------------------------- */
 
 @media all and #{$mobile} {
-  .page > #quartz-body {
-    & .sidebar.left,
-    & .sidebar.right,
-    & .center {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  body {
-    font-size: 16px;
-  }
-
-  .center > article {
-    padding: 0.75rem;
-  }
+  body { font-size: 14px; }
+  .center > article { padding: 0.75rem; }
+  .page .left.sidebar { gap: 0.4rem; }
 }
