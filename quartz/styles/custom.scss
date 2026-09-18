@@ -816,7 +816,9 @@ article img { border-radius: 0; }
    can never scroll the page. */
 .lightboxes { display: contents; }
 
-.lightbox-toggle {
+/* Quartz strips class attributes from <input>, so target the element
+   structurally instead of by class. */
+.lightbox-wrap > input[type="checkbox"] {
   position: fixed;
   top: 0;
   left: 0;
@@ -829,7 +831,7 @@ article img { border-radius: 0; }
   -webkit-appearance: none;
 }
 
-.lightbox-toggle:checked + .lightbox {
+.lightbox-wrap > input[type="checkbox"]:checked + .lightbox {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,7 +4,7 @@ title: Welcome to the Cosmos Baby
 
 <div style="text-align:center"><img src="https://blob.gifcities.org/gifcities/ARI7F3TMMFBRUP4NPLAR4TYZ3Y66DDNV.gif" alt="Spelljammer: Intergalactic"></div>
 
-**Spelljammer: Intergalactic** is an ongoing Dungeons & Dragons campaign played out across the Phlogiston, the rainbow ocean that runs between worlds. The crew works as Aces, freelance bounty hunters who take their contracts off the Wildcard broadcast.
+Welcome, players and spectators. This is where the notes live. Every session we run gets written up and parked here for the record, so none of us has to keep the whole thing in our heads.
 
 > So, you wanna be Aces.
 >
