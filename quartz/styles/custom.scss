@@ -26,6 +26,26 @@
     url("static/fonts/ms_sans_serif_bold.woff") format("woff");
 }
 
+/* the title face: Orbitron. Swap to Audiowide by changing --w98-display. */
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    url("static/fonts/orbitron-latin-900-normal.woff2") format("woff2"),
+    url("static/fonts/orbitron-latin-900-normal.woff") format("woff");
+}
+@font-face {
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("static/fonts/audiowide-latin-400-normal.woff2") format("woff2"),
+    url("static/fonts/audiowide-latin-400-normal.woff") format("woff");
+}
+
 /* --- 2. Palette --------------------------------------------------------- */
 
 :root,
@@ -50,6 +70,7 @@
   --w98-ui: "Pixelated MS Sans Serif", "MS Sans Serif", Tahoma, sans-serif;
   --w98-doc: Arial, Helvetica, sans-serif;
   --w98-mono: "Courier New", Courier, monospace;
+  --w98-display: "Orbitron", "Audiowide", sans-serif;
 
   --light: var(--w98-surface);
   --lightgray: var(--w98-face);
@@ -163,6 +184,8 @@ textarea {
 }
 
 /* --- 5. Desktop --------------------------------------------------------- */
+
+.page { max-width: 1600px; }
 
 html,
 body {
@@ -363,11 +386,18 @@ blockquote {
   & a {
     color: #ffffff;
     text-decoration: none;
-    font-family: var(--w98-ui);
-    font-size: 14px;
-    font-weight: 700;
-    -webkit-font-smoothing: none;
-    text-shadow: 1px 1px 0 #000, 0 0 3px #000;
+    font-family: var(--w98-display);
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    /* chromatic fringe, then a hard black edge so it reads over stars */
+    text-shadow:
+      -1px 0 rgba(255, 0, 200, 0.75),
+      1px 0 rgba(0, 220, 255, 0.75),
+      2px 2px 0 #000,
+      0 0 10px rgba(120, 190, 255, 0.5);
   }
 }
 
@@ -407,8 +437,8 @@ blockquote {
 
   & ul ul {
     border-left: 1px dotted var(--w98-shadow);
-    margin-left: 16px;
-    padding-left: 16px;
+    margin-left: 10px;
+    padding-left: 10px;
     margin-top: 3px;
   }
 
@@ -416,10 +446,10 @@ blockquote {
     border-bottom: 1px dotted var(--w98-shadow);
     content: "";
     display: block;
-    left: -16px;
+    left: -10px;
     position: absolute;
     top: 9px;
-    width: 12px;
+    width: 7px;
   }
 
   & a,
@@ -673,6 +703,85 @@ footer {
 }
 
 article img { border-radius: 0; }
+
+/* --- 13b. Fanart gallery ------------------------------------------------ */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 1.25rem 0;
+}
+
+.gallery-item {
+  display: block;
+  background: var(--w98-surface);
+  padding: 3px;
+  text-decoration: none !important;
+  box-shadow:
+    inset -1px -1px var(--w98-frame),
+    inset 1px 1px var(--w98-light),
+    inset -2px -2px var(--w98-shadow),
+    inset 2px 2px var(--w98-face);
+
+  &:active {
+    box-shadow:
+      inset -1px -1px var(--w98-light),
+      inset 1px 1px var(--w98-frame),
+      inset -2px -2px var(--w98-face),
+      inset 2px 2px var(--w98-shadow);
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  & .gallery-caption {
+    display: block;
+    font-family: var(--w98-ui);
+    font-size: 11px;
+    -webkit-font-smoothing: none;
+    color: var(--w98-text);
+    text-align: center;
+    padding: 3px 2px 1px;
+  }
+}
+
+/* click to blow up. no javascript, just :target */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.88);
+  padding: 2rem;
+  box-sizing: border-box;
+
+  &:target { display: flex; align-items: center; justify-content: center; }
+
+  & > img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: var(--w98-surface);
+    padding: 3px;
+    box-shadow:
+      inset -1px -1px var(--w98-frame),
+      inset 1px 1px var(--w98-face),
+      inset -2px -2px var(--w98-shadow),
+      inset 2px 2px var(--w98-light);
+  }
+
+  & .lightbox-close {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+}
 
 /* --- 14. Scrollbars ----------------------------------------------------- */
 

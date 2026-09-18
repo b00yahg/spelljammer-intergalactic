@@ -18,6 +18,6 @@ title: Welcome to the Cosmos Baby
 - [Nebula Net](nebula-net.base) is where the crew keeps their profiles, alongside the people they keep running into.
 - [Giffopedia](giffopedia.base) covers the outfits and the ports of call.
 - [Field Manual](field-manual.base) has the house rules the table plays with.
-- [Soundtrack](soundtrack) is what plays while we play.
+- [Soundtrack](soundtrack) is the jams of the cosmos, tuned in from wherever the crew happens to be docked.
 
 <div style="text-align:center"><img src="https://blob.gifcities.org/gifcities/ARI7F3TMMFBRUP4NPLAR4TYZ3Y66DDNV.gif" alt=""></div>
