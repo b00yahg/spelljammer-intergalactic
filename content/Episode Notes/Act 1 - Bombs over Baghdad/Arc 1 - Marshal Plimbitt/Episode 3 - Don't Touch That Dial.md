@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:39.120Z
-modified: 2026-09-18T01:09:39.120Z
+created: 2026-09-18T02:28:25.810Z
+modified: 2026-09-18T02:28:25.810Z
+published: 2026-09-18T02:28:25.810Z
+type: session
+kind: episode
+episode: 3
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 3
 ---
 
 # Session 3 - Ship Roles & New Rivals

@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:43.020Z
-modified: 2026-09-18T01:09:43.020Z
+created: 2026-09-18T02:28:29.361Z
+modified: 2026-09-18T02:28:29.361Z
+published: 2026-09-18T02:28:29.361Z
+type: session
+kind: episode
+episode: 13
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 14
 ---
 
 The DM performs a wonderful narration for the Last Drop Saloon as the party steps into the swinging saloon doors. [[Claire]] hangs back and records the party, who wants to aurafarm as they enter the saloon—[[D'Arby]] swings open the doors and step on the LOUDLY creaking floorboards. Everything—the chatter, the piano, everything—goes completely silent as he enters. D'Arby strolls toward the bar and waves a casual 'hey' to everyone. He apologizes for the loud creaking, and finds that no sound leaves his mouth.

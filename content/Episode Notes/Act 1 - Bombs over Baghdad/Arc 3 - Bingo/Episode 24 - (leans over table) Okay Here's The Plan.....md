@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:46.444Z
-modified: 2026-09-18T01:09:46.444Z
+created: 2026-09-18T02:28:32.640Z
+modified: 2026-09-18T02:28:32.641Z
+published: 2026-09-18T02:28:32.641Z
+type: session
+kind: episode
+episode: 24
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 24
 ---
 
 Light surrounds the party, blinding us—and then we find ourselves in a conference room lit by fluorescent lights. [[Gabriel]] and Elijah are sitting across from us, arms crossed. They start by asking us if we're alright.

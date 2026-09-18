@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:45.092Z
-modified: 2026-09-18T01:09:45.092Z
+created: 2026-09-18T02:28:31.343Z
+modified: 2026-09-18T02:28:31.343Z
+published: 2026-09-18T02:28:31.343Z
+type: session
+kind: episode
+episode: 20
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 20
 ---
 
 The captain begins speaking, asking who we are. [[Otto]] replies that "we are the saviors of the hour," and [[Claire]] finishes: "the Ocean Court Express." The captain seems unfamiliar with us, and says he has no such meeting scheduled—but Kilo jumps in and explains that we're good Samaritans who helped him out when his message was taken.

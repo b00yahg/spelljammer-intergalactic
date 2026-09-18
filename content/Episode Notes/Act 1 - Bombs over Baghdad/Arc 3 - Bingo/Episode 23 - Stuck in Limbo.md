@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:46.076Z
-modified: 2026-09-18T01:09:46.076Z
+created: 2026-09-18T02:28:32.296Z
+modified: 2026-09-18T02:28:32.296Z
+published: 2026-09-18T02:28:32.296Z
+type: session
+kind: episode
+episode: 23
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 23
 ---
 
 As we start...

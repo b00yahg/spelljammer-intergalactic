@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:48.760Z
-modified: 2026-09-18T01:09:48.760Z
+created: 2026-09-18T02:28:34.798Z
+modified: 2026-09-18T02:28:34.798Z
+published: 2026-09-18T02:28:34.798Z
+type: session
+kind: interlude
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 31
 ---
 
 The world is changing. ((The DM spins an amazing monologue that I didn't get to write down and it was IMPROVISED instead of pre-written?? Damn this guy is good, and you can't hear it, audience. I have failed you....))

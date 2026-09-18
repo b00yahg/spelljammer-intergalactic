@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:49.976Z
-modified: 2026-09-18T01:09:49.976Z
+created: 2026-09-18T02:28:36.028Z
+modified: 2026-09-18T02:28:36.032Z
+published: 2026-09-18T02:28:36.032Z
+type: session
+kind: episode
+episode: 30
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 35
 ---
 
 The sky breaks apart.

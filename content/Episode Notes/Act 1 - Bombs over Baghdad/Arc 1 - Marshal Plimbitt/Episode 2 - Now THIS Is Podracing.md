@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:38.866Z
-modified: 2026-09-18T01:09:38.866Z
+created: 2026-09-18T02:28:25.503Z
+modified: 2026-09-18T02:28:25.503Z
+published: 2026-09-18T02:28:25.503Z
+type: session
+kind: episode
+episode: 2
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 2
 ---
 
 ## Black's Jack Casino

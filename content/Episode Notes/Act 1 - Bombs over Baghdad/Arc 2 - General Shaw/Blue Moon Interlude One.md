@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:41.678Z
-modified: 2026-09-18T01:09:41.678Z
+created: 2026-09-18T02:28:28.107Z
+modified: 2026-09-18T02:28:28.110Z
+published: 2026-09-18T02:28:28.110Z
+type: session
+kind: interlude
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 10
 ---
 
 We step out into the swirling neon chaos of the Blue Moon Station. It's familiar—holographic ads, the hum of Spelljammer engines, and more. But we get something new: Downtime. Jack will be giving us our paycheque for the bounty shortly.

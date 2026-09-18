@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:49.672Z
-modified: 2026-09-18T01:09:49.672Z
+created: 2026-09-18T02:28:35.748Z
+modified: 2026-09-18T02:28:35.748Z
+published: 2026-09-18T02:28:35.748Z
+type: session
+kind: episode
+episode: 29
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 34
 ---
 
 ## Notes

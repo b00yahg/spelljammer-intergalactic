@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:45.776Z
-modified: 2026-09-18T01:09:45.777Z
+created: 2026-09-18T02:28:31.976Z
+modified: 2026-09-18T02:28:31.977Z
+published: 2026-09-18T02:28:31.977Z
+type: session
+kind: episode
+episode: 22
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 22
 ---
 
 A bike careens into the lake, and shortly after landing in the water, there is a "BOOM!", spraying a cool mist up into the air.

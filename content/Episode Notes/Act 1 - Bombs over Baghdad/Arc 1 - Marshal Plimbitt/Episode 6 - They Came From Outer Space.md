@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:40.183Z
-modified: 2026-09-18T01:09:40.183Z
+created: 2026-09-18T02:28:26.777Z
+modified: 2026-09-18T02:28:26.777Z
+published: 2026-09-18T02:28:26.777Z
+type: session
+kind: episode
+episode: 6
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 6
 ---
 
 We start with [[Vayb]]!

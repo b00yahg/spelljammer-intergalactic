@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:38.599Z
-modified: 2026-09-18T01:09:38.600Z
+created: 2026-09-18T02:28:25.198Z
+modified: 2026-09-18T02:28:25.202Z
+published: 2026-09-18T02:28:25.202Z
+type: session
+kind: episode
+episode: 1
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 1
 ---
 
 > So, you wanna be Aces.

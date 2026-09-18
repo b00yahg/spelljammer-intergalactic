@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:40.709Z
-modified: 2026-09-18T01:09:40.709Z
+created: 2026-09-18T02:28:27.119Z
+modified: 2026-09-18T02:28:27.119Z
+published: 2026-09-18T02:28:27.119Z
+type: session
+kind: episode
+episode: 7
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 7
 ---
 
 The episode begins with [[Otto]]—he's just finished a definitely real, intense, emotional, great-writing-by-the-DM side quest, for sure. 100%.

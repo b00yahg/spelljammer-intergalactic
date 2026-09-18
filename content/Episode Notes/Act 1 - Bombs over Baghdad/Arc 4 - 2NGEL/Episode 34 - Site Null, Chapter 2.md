@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:51.271Z
-modified: 2026-09-18T01:09:51.271Z
+created: 2026-09-18T02:28:37.292Z
+modified: 2026-09-18T02:28:37.292Z
+published: 2026-09-18T02:28:37.292Z
+type: session
+kind: episode
+episode: 34
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 39
 ---
 
 The following notes are presented for posterity, even though I had an off night and was unable to be thorough with notetaking that night. -Clio

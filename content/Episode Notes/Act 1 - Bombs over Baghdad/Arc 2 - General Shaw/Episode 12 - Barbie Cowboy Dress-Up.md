@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:42.696Z
-modified: 2026-09-18T01:09:42.697Z
+created: 2026-09-18T02:28:29.029Z
+modified: 2026-09-18T02:28:29.031Z
+published: 2026-09-18T02:28:29.031Z
+type: session
+kind: episode
+episode: 12
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 13
 ---
 
 Continuing his interrogation of our prisoner, [[Otto]] circles him—cutting an imposing and threatening figure. He tells the pirate captain that he wants to know "everything" from these people—who they are, who's in charge here, everything.

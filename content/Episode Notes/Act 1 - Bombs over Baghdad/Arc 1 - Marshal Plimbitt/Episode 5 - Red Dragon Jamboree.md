@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:39.850Z
-modified: 2026-09-18T01:09:39.853Z
+created: 2026-09-18T02:28:26.436Z
+modified: 2026-09-18T02:28:26.436Z
+published: 2026-09-18T02:28:26.436Z
+type: session
+kind: episode
+episode: 5
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 5
 ---
 
 We begin the session where we left off last time!

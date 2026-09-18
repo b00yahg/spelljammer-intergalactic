@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:39.503Z
-modified: 2026-09-18T01:09:39.503Z
+created: 2026-09-18T02:28:26.146Z
+modified: 2026-09-18T02:28:26.146Z
+published: 2026-09-18T02:28:26.146Z
+type: session
+kind: episode
+episode: 4
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 4
 ---
 
 "This is your Captain speaking: Pajama Party at 20:00"

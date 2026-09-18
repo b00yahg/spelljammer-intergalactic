@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:43.298Z
-modified: 2026-09-18T01:09:43.298Z
+created: 2026-09-18T02:28:29.673Z
+modified: 2026-09-18T02:28:29.673Z
+published: 2026-09-18T02:28:29.673Z
+type: session
+kind: episode
+episode: 15
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 15
 ---
 
 The train (which [[Claire]] brought for us?) creaks along. The high noon sun casts a bright glow over [[Shilear]].

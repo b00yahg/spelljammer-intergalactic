@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:48.138Z
-modified: 2026-09-18T01:09:48.138Z
+created: 2026-09-18T02:28:33.856Z
+modified: 2026-09-18T02:28:33.856Z
+published: 2026-09-18T02:28:33.856Z
+type: session
+kind: special
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 29
 ---
 
 We begin our story on a red Spelljammer. We sit among, mostly, strangers. A person ahead of the group sits in front of a projected email—one that brought us together. "So," they say, "you're the ones who're going to do this."

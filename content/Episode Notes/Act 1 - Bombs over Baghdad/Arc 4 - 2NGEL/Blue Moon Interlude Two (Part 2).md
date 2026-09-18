@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:49.072Z
-modified: 2026-09-18T01:09:49.072Z
+created: 2026-09-18T02:28:35.095Z
+modified: 2026-09-18T02:28:35.095Z
+published: 2026-09-18T02:28:35.095Z
+type: session
+kind: interlude
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 32
 ---
 
 This is an informal partial session ran so that our lovely Shmamy got some time to do his [[Vayb]] roleplay.

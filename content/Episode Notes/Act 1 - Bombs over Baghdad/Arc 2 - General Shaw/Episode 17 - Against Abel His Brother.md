@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:43.936Z
-modified: 2026-09-18T01:09:43.936Z
+created: 2026-09-18T02:28:30.343Z
+modified: 2026-09-18T02:28:30.346Z
+published: 2026-09-18T02:28:30.346Z
+type: session
+kind: episode
+episode: 17
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 17
 ---
 
 We set off into the skies above [[Shilear]], where 2NGEL's destroyer ship looms—a huge roving fortress of a Spelljammer that resembles a heavily-armored whale. As we make our approach, its mouth gapes and a metal pod flies toward us. It hails us.

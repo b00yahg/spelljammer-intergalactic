@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:51.596Z
-modified: 2026-09-18T01:09:51.596Z
+created: 2026-09-18T02:28:37.584Z
+modified: 2026-09-18T02:28:37.584Z
+published: 2026-09-18T02:28:37.584Z
+type: session
+kind: episode
+episode: 35
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 40
 ---
 
 Session notes for this adventure courtesy of our lovely fighter, [[D'Arby]]!

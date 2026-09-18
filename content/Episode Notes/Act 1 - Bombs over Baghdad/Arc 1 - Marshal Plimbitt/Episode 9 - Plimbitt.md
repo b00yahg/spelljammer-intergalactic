@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:41.362Z
-modified: 2026-09-18T01:09:41.362Z
+created: 2026-09-18T02:28:27.767Z
+modified: 2026-09-18T02:28:27.767Z
+published: 2026-09-18T02:28:27.767Z
+type: session
+kind: episode
+episode: 9
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 9
 ---
 
 Episode 9 - His Most Distinguished Field Marshal Commander Brigadier [[Marshal Plimbitt|General Plimbitt]] III, Supreme Ordinance Officer of the Astral Fleet, Chair of the Giff Council

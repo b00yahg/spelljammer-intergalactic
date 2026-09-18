@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:43.577Z
-modified: 2026-09-18T01:09:43.578Z
+created: 2026-09-18T02:28:29.979Z
+modified: 2026-09-18T02:28:29.979Z
+published: 2026-09-18T02:28:29.979Z
+type: session
+kind: episode
+episode: 16
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 16
 ---
 
 As we begin the session, [[Shilear]] is abustle with preparations. [[Shaw]] is giving orders.

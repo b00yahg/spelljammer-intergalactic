@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:47.465Z
-modified: 2026-09-18T01:09:47.465Z
+created: 2026-09-18T02:28:33.550Z
+modified: 2026-09-18T02:28:33.550Z
+published: 2026-09-18T02:28:33.550Z
+type: session
+kind: episode
+episode: 27
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 27
 ---
 
 **BONUSES**

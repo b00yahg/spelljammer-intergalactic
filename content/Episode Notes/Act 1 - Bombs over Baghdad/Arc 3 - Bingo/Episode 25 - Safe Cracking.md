@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:46.793Z
-modified: 2026-09-18T01:09:46.793Z
+created: 2026-09-18T02:28:32.931Z
+modified: 2026-09-18T02:28:32.931Z
+published: 2026-09-18T02:28:32.931Z
+type: session
+kind: episode
+episode: 25
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 25
 ---
 
 We begin the session with a speech, in time past, delivered by Ainscorp to pitch Mammon's Vault.

@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:50.966Z
-modified: 2026-09-18T01:09:50.966Z
+created: 2026-09-18T02:28:36.969Z
+modified: 2026-09-18T02:28:36.969Z
+published: 2026-09-18T02:28:36.969Z
+type: session
+kind: episode
+episode: 33
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 38
 ---
 
 Theo looks up at the body of his father, on the post in front of the chapel. Arms out, head down.

@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:52.207Z
-modified: 2026-09-18T01:09:52.208Z
+created: 2026-09-18T02:28:38.248Z
+modified: 2026-09-18T02:28:38.248Z
+published: 2026-09-18T02:28:38.248Z
+type: session
+kind: interlude
+act: Act 2 - Feel Good, Inc
+arc: Arc 5 - Bambie
+sort: 42
 ---
 
 We return to the [[The Rock of Bral|Rock of Bral]] after the defeat of [[2NGEL]]. Returning back to our home, we arrive with proof of 2NGEL's defeat—to a hero's welcome. [[Claire]] prepares to arrive in an outfit curated around 2NGEL's duster, which she has taken as a trophy. Otto's wearing 2NGEL's hat.

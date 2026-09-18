@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:50.281Z
-modified: 2026-09-18T01:09:50.281Z
+created: 2026-09-18T02:28:36.337Z
+modified: 2026-09-18T02:28:36.337Z
+published: 2026-09-18T02:28:36.337Z
+type: session
+kind: episode
+episode: 31
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 36
 ---
 
 # Pixie's Guidance

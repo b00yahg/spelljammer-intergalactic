@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:41.987Z
-modified: 2026-09-18T01:09:41.987Z
+created: 2026-09-18T02:28:28.427Z
+modified: 2026-09-18T02:28:28.429Z
+published: 2026-09-18T02:28:28.429Z
+type: session
+kind: episode
+episode: 10
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 11
 ---
 
 The episode begins with the boys chatting at the Laughing Beholder. They're chatting about the bomb we have on the ship, realizing we... have not really addressed it. [[D'Arby]] told us about how he'd made some sort of a deal or friendship with Civlar, who has experience with the bomb. [[Otto]] insists that we've gotta get rid of the bomb before our next mission, no matter what. They started discussing some other place where we could hide it.

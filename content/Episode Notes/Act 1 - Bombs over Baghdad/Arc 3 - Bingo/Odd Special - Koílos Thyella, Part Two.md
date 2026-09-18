@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:48.433Z
-modified: 2026-09-18T01:09:48.433Z
+created: 2026-09-18T02:28:34.216Z
+modified: 2026-09-18T02:28:34.216Z
+published: 2026-09-18T02:28:34.216Z
+type: session
+kind: special
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 30
 ---
 
 We resume our programming with a retcon scene because Zed was supposed to tell us something. :P

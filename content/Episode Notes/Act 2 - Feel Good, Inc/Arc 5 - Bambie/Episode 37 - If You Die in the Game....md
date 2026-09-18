@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:52.535Z
-modified: 2026-09-18T01:09:52.535Z
+created: 2026-09-18T02:28:38.555Z
+modified: 2026-09-18T02:28:38.555Z
+published: 2026-09-18T02:28:38.555Z
+type: session
+kind: episode
+episode: 37
+act: Act 2 - Feel Good, Inc
+arc: Arc 5 - Bambie
+sort: 43
 ---
 
 We begin... with the Meat Wheel! The party spends their time to visit Meat and gamble for funny magic items.

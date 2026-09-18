@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:42.370Z
-modified: 2026-09-18T01:09:42.370Z
+created: 2026-09-18T02:28:28.727Z
+modified: 2026-09-18T02:28:28.727Z
+published: 2026-09-18T02:28:28.727Z
+type: session
+kind: episode
+episode: 11
+act: Act 1 - Bombs over Baghdad
+arc: Arc 2 - General Shaw
+sort: 12
 ---
 
 We begin the session in the stars. [[Vayb]] chats with [[PIXIE|Pixie]] while he flies and they're curating a playlist together. Pixie tells him how she's searched the web and found something like 3000 songs to start considering, and asks if he wants her to play them all at once.

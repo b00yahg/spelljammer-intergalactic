@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:45.465Z
-modified: 2026-09-18T01:09:45.466Z
+created: 2026-09-18T02:28:31.645Z
+modified: 2026-09-18T02:28:31.645Z
+published: 2026-09-18T02:28:31.645Z
+type: session
+kind: episode
+episode: 21
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 21
 ---
 
 Hell is empty, and the mimes are all here. We cut, in medias res, to where we left off. The massive demons with painted white faces tower over the foxlike person.

@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:51.908Z
-modified: 2026-09-18T01:09:51.909Z
+created: 2026-09-18T02:28:37.943Z
+modified: 2026-09-18T02:28:37.943Z
+published: 2026-09-18T02:28:37.943Z
+type: session
+kind: episode
+episode: 36
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 41
 ---
 
 At the end of last session, we discovered that [[2NGEL]] was pumping Project Cain into the cathedral called the Church of the First, where the peace delegations between the elves and the Scro were being held.

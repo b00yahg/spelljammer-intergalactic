@@ -1,7 +1,13 @@
 ---
 publish: true
-created: 2026-09-18T01:09:47.749Z
-modified: 2026-09-18T01:09:47.749Z
+created: 2026-09-18T02:28:34.501Z
+modified: 2026-09-18T02:28:34.501Z
+published: 2026-09-18T02:28:34.501Z
+type: session
+kind: ova
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 28
 ---
 
 # Session Notes

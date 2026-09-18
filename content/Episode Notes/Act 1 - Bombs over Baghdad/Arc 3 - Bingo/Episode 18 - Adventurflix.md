@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:44.284Z
-modified: 2026-09-18T01:09:44.284Z
+created: 2026-09-18T02:28:30.682Z
+modified: 2026-09-18T02:28:30.682Z
+published: 2026-09-18T02:28:30.682Z
+type: session
+kind: episode
+episode: 18
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 18
 ---
 
 **Note:** We had the wonderful artist DiceDoll vibing and listening in on our session tonight—and she produced the lovely sketches of the game's moments that you've been seeing!!

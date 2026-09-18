@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:49.362Z
-modified: 2026-09-18T01:09:49.367Z
+created: 2026-09-18T02:28:35.395Z
+modified: 2026-09-18T02:28:35.395Z
+published: 2026-09-18T02:28:35.395Z
+type: session
+kind: episode
+episode: 28
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 33
 ---
 
 We open to music.

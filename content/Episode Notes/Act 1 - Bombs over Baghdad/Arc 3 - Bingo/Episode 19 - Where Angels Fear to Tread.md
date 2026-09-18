@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:44.730Z
-modified: 2026-09-18T01:09:44.730Z
+created: 2026-09-18T02:28:30.986Z
+modified: 2026-09-18T02:28:30.986Z
+published: 2026-09-18T02:28:30.986Z
+type: session
+kind: episode
+episode: 19
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 19
 ---
 
 We resume the session with [[Vayb]] and [[Squall]] doing okay now (they had a text RP between sessions), with Sugar on the comms. Sugar asks if she should, like… be going now or something? 

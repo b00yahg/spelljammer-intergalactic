@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:50.630Z
-modified: 2026-09-18T01:09:50.630Z
+created: 2026-09-18T02:28:36.622Z
+modified: 2026-09-18T02:28:36.622Z
+published: 2026-09-18T02:28:36.622Z
+type: session
+kind: episode
+episode: 32
+act: Act 1 - Bombs over Baghdad
+arc: Arc 4 - 2NGEL
+sort: 37
 ---
 
 We open the session with a captain's log, written by an Elvish Imperial Navy captain who landed on [[Athas]] and discovered defiling magic.

@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:41.013Z
-modified: 2026-09-18T01:09:41.013Z
+created: 2026-09-18T02:28:27.476Z
+modified: 2026-09-18T02:28:27.476Z
+published: 2026-09-18T02:28:27.476Z
+type: session
+kind: episode
+episode: 8
+act: Act 1 - Bombs over Baghdad
+arc: Arc 1 - Marshal Plimbitt
+sort: 8
 ---
 
 [[Lets Jam - Ship Combat Mechanics for D&D|Let's Jam]]!

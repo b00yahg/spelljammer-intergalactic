@@ -1,7 +1,14 @@
 ---
 publish: true
-created: 2026-09-18T01:09:47.152Z
-modified: 2026-09-18T01:09:47.153Z
+created: 2026-09-18T02:28:33.246Z
+modified: 2026-09-18T02:28:33.246Z
+published: 2026-09-18T02:28:33.246Z
+type: session
+kind: episode
+episode: 26
+act: Act 1 - Bombs over Baghdad
+arc: Arc 3 - Bingo
+sort: 26
 ---
 
 We begin our session flashing back to a scene our paladin and fighter didn't get to have. The camera returns back to the Ocean Court Express, where D'Arby's been summoned to talk to [[Otto]].
