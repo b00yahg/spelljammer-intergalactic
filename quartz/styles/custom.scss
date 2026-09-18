@@ -812,12 +812,21 @@ article img { border-radius: 0; }
 
 /* click to blow up. a hidden checkbox drives it, so Quartz's link router
    and its hover previews never get involved. */
+/* the overlays live here. fixed-position checkbox so focusing one
+   can never scroll the page. */
+.lightboxes { display: contents; }
+
 .lightbox-toggle {
-  position: absolute;
-  width: 0;
-  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
   opacity: 0;
+  margin: 0;
   pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .lightbox-toggle:checked + .lightbox {
