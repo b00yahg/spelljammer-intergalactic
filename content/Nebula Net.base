@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Nebula Net")
+    groupBy:
+      property: file.folder
+      direction: ASC
