@@ -4,6 +4,12 @@ views:
     filters:
       and:
         - file.inFolder("Nebula Net")
+    order:
+      - file.name
+      - file.folder
     groupBy:
       property: file.folder
       direction: ASC
+    sort:
+      - property: file.name
+        direction: ASC

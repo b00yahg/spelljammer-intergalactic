@@ -4,15 +4,14 @@ views:
     filters:
       and:
         - type == "session"
+    order:
+      - file.name
+      - episode
+      - kind
+      - arc
     groupBy:
       property: act
       direction: ASC
-    order:
-      - file.name
-      - arc
-      - kind
     sort:
       - property: sort
         direction: ASC
-  - type: table
-    name: By Arc

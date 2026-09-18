@@ -7,3 +7,9 @@ views:
     groupBy:
       property: file.folder
       direction: ASC
+    order:
+      - file.name
+      - file.folder
+    sort:
+      - property: file.name
+        direction: ASC
