@@ -195,10 +195,15 @@ body {
   background-attachment: fixed !important;
 }
 
-#quartz-root,
-#quartz-body,
-.page > #quartz-body {
+#quartz-root {
   background: transparent !important;
+}
+
+/* one grey slab under the whole three-column layout */
+.page > #quartz-body {
+  @include window;
+  padding: 1.1rem 1.25rem 1.5rem;
+  box-sizing: border-box;
 }
 
 body {
@@ -217,11 +222,11 @@ body {
     border: none;
   }
 
-  /* raised edge, no title bar: a window sitting open on the desktop */
   & .center {
-    @include window;
+    background: transparent;
+    box-shadow: none;
+    padding: 0 0.75rem;
     box-sizing: border-box;
-    padding: 1.25rem 1.5rem;
   }
   & .right.sidebar {
     gap: 0.9rem;
@@ -387,17 +392,33 @@ blockquote {
     color: #ffffff;
     text-decoration: none;
     font-family: var(--w98-display);
-    font-size: 19px;
+    font-size: 27px;
     font-weight: 900;
-    line-height: 1.25;
+    line-height: 1.15;
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
-    /* chromatic fringe, then a hard black edge so it reads over stars */
-    text-shadow:
-      -1px 0 rgba(255, 0, 200, 0.75),
-      1px 0 rgba(0, 220, 255, 0.75),
-      2px 2px 0 #000,
-      0 0 10px rgba(120, 190, 255, 0.5);
+    background-image: linear-gradient(
+      100deg,
+      #00d9ff 0%,
+      #4d7cff 28%,
+      #b44cff 52%,
+      #ff2bc4 74%,
+      #ffb300 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.6));
+  }
+
+  /* if a browser cannot paint gradient text, fall back to solid navy */
+  @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+    & a {
+      color: var(--w98-title-a);
+      -webkit-text-fill-color: var(--w98-title-a);
+      background-image: none;
+    }
   }
 }
 

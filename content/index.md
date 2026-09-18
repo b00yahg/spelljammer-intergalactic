@@ -19,5 +19,6 @@ title: Welcome to the Cosmos Baby
 - [Giffopedia](giffopedia.base) covers the outfits and the ports of call.
 - [Field Manual](field-manual.base) has the house rules the table plays with.
 - [Soundtrack](soundtrack) is the jams of the cosmos, tuned in from wherever the crew happens to be docked.
+- [Gallery](gallery) is every piece of art made for the campaign, credited to the artists who drew it.
 
 <div style="text-align:center"><img src="https://blob.gifcities.org/gifcities/ARI7F3TMMFBRUP4NPLAR4TYZ3Y66DDNV.gif" alt=""></div>
