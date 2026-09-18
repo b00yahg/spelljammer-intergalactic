@@ -1,10 +1,12 @@
 ---
 publish: true
-created: 2026-09-18T06:12:37.770Z
-modified: 2026-09-18T06:12:37.770Z
-published: 2026-09-18T06:12:37.770Z
+created: 2026-09-18T06:26:58.544Z
+modified: 2026-09-18T06:26:58.544Z
+published: 2026-09-18T06:26:58.544Z
 ---
 
-_Hello out there across the Phlogiston. You're locked in to 108.5 Cosmos FM, broadcasting from wherever the signal still reaches. Sync your helm and warm up those crystal arrays. It's time to jam._
+_Hello out there across the Phlogiston. You're locked in to 102.9 CosmicWaves FM, broadcasting from wherever the signal still reaches. Sync your helm and warm up those crystal arrays. It's time to jam._
 
-<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/_nPIk3y4jrA?list=PLZAle-Y5mFx8" title="Spelljammer: Intergalactic soundtrack" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+<div class="audio-embed"><iframe src="https://open.spotify.com/embed/playlist/6Yvl8JaqIOoFkK1oaJK7CV" title="102.9 CosmicWaves FM" width="100%" height="520" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+
+Same station runs on YouTube if you would rather listen there. [Open the playlist](https://www.youtube.com/playlist?list=PLZAle-Y5mFx8)
