@@ -752,6 +752,22 @@ article img { border-radius: 0; }
   }
 }
 
+/* a music embed sets its own height rather than a video aspect ratio */
+.audio-embed {
+  @include sunken;
+  background: var(--w98-field);
+  padding: 3px;
+  margin: 1.25rem 0;
+  box-sizing: border-box;
+
+  & iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+}
+
 /* --- 13b. Fanart gallery ------------------------------------------------ */
 
 .gallery-grid {
@@ -794,7 +810,22 @@ article img { border-radius: 0; }
 
 }
 
-/* click to blow up. no javascript, just :target */
+/* click to blow up. a hidden checkbox drives it, so Quartz's link router
+   and its hover previews never get involved. */
+.lightbox-toggle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lightbox-toggle:checked + .lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .lightbox {
   display: none;
   position: fixed;
@@ -803,8 +834,6 @@ article img { border-radius: 0; }
   background: rgba(0, 0, 0, 0.88);
   padding: 2rem;
   box-sizing: border-box;
-
-  &:target { display: flex; align-items: center; justify-content: center; }
 
   & .lightbox-figure {
     position: relative;
@@ -846,7 +875,8 @@ article img { border-radius: 0; }
   & .lightbox-close {
     position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: 0;
+    cursor: url("static/cursors/normal.cur"), pointer;
   }
 }
 
