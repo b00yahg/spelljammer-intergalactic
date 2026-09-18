@@ -763,8 +763,12 @@ article img { border-radius: 0; }
 
 .gallery-item {
   display: block;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   background: var(--w98-surface);
   padding: 3px;
+  box-sizing: border-box;
   text-decoration: none !important;
   box-shadow:
     inset -1px -1px var(--w98-frame),
@@ -830,16 +834,12 @@ article img { border-radius: 0; }
   & figcaption {
     font-family: var(--w98-ui);
     -webkit-font-smoothing: none;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--w98-text);
-    padding: 5px 4px 3px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.75rem;
+    text-align: center;
+    padding: 6px 6px 4px;
 
     & .lightbox-title { font-weight: 700; }
-    & .lightbox-artist { color: var(--w98-text); }
     & a { color: var(--w98-link); text-decoration: underline; }
   }
 
