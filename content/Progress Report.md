@@ -1,8 +1,8 @@
 ---
 publish: true
-created: 2026-09-18T03:39:42.142Z
-modified: 2026-09-18T03:39:42.142Z
-published: 2026-09-18T03:39:42.142Z
+created: 2026-09-18T04:23:36.380Z
+modified: 2026-09-18T04:23:36.380Z
+published: 2026-09-18T04:23:36.380Z
 ---
 
 > [!summary] Campaign Summary
@@ -119,48 +119,72 @@ published: 2026-09-18T03:39:42.142Z
 
 ### Arc 6 - ██
 
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
+
 **Status:** Not started
 
 ### Arc 7 - ████ ██ ███ ███████
+
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
 
 **Status:** Not started
 
 ### Arc 8 - █████ ████████
 
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
+
 **Status:** Not started
 
 ### Arc 9 - ███
+
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
 
 **Status:** Not started
 
 ## Act Three: Harder, Better, Faster, Stronger (Levels 11-14)
 
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
+
 **Status:** Not started
 
 ### Arc 10 - ████████ ███████ ███ █████
+
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
 
 **Status:** Not started
 
 ### Arc 11 - ███████ ██ █████████
 
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
+
 **Status:** Not started
 
 ### Arc 12 - ███ █████ ██ █████████
+
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
 
 **Status:** Not started
 
 ## Act Four: Intergalactic (Levels 14-16)
 
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
+
 **Status:** Not started
 
 ### Arc 13 - ███ █████ █████ ████
+
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
 
 **Status:** Not started
 
 ### Arc 14 - ███ █████
 
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
+
 **Status:** Not started
 
 ### Arc 15 - ████
+
+<div class="progress-indicator segmented" role="progressbar" aria-valuenow="0"><span class="progress-indicator-bar" style="width:0%"></span></div>
 
 **Status:** Not started
