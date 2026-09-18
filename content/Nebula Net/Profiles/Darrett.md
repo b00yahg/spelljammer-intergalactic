@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2026-09-18T01:03:12.827Z
-modified: 2026-09-18T01:03:12.827Z
+modified: 2026-09-18T02:10:29.018Z
 ---
-
-![[Images/042-03-005.darrett-highwater.webp]]
 
 ## Profile:
 

@@ -1,10 +1,9 @@
 ---
 publish: true
 created: 2026-09-18T01:03:13.148Z
-modified: 2026-09-18T01:03:13.148Z
+modified: 2026-09-18T02:10:18.979Z
 ---
 
-![[Images/Pasted image 20260917195210.png]]
 Art by Dicedoll
 
 RECOVERED FILE // integrity check failed
