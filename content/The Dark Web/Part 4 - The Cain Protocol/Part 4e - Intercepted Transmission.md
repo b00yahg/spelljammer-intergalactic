@@ -2,9 +2,9 @@
 publish: true
 title: "Part 4.5: Intercepted Transmission"
 description: A recovered chat between L1CH and H4G, and a report that was supposed to be scrubbed.
-created: 2026-09-30T04:42:09.208Z
-modified: 2026-09-30T04:42:09.208Z
-published: 2026-09-30T04:42:09.208Z
+created: 2026-09-30T04:47:46.899Z
+modified: 2026-09-30T04:47:46.899Z
+published: 2026-09-30T04:47:46.899Z
 ---
 
 The last site was a chat log that was never meant to surface. Two people who seem to be watching 2NGEL, talking about him while he comes apart.

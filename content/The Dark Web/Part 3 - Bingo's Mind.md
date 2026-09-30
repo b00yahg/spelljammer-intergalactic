@@ -2,9 +2,9 @@
 publish: true
 title: "Part 3: Bingo's Mind"
 description: Stolen data from the Pragmatic Order of Thought, and the carnival running inside a thief's head.
-created: 2026-09-30T03:18:40.486Z
-modified: 2026-09-30T03:20:51.014Z
-published: 2026-09-30T03:20:51.014Z
+created: 2026-09-30T04:42:08.873Z
+modified: 2026-09-30T04:42:08.873Z
+published: 2026-09-30T04:42:08.873Z
 ---
 
 The stranger from the chat came back with a gift. It was a data file lifted from the Pragmatic Order of Thought, and it held the digital parts of [[Bingo]]'s mind.
@@ -135,50 +135,50 @@ As the players opened up the program, they played through his carnival games to 
 > `[00:47]` **\<BINGO>** yo, 2NGEL, you still kickin'? been hours, man. don't tell me you bailed on me.
 > `[01:56]` **\<BINGO>** you out there, wings? I'm coolin' my heels waitin' for a green light. no work gets done till you agree to my terms, dig?
 > `[03:12]` **\<BINGO>** c'mon, this silence is givin' me the creeps. I'm sittin' right here tappin' my thumbs. Tick-tock.
-> `[04:30]` ==\&lt;2NGEL\&gt; I am here.==
+> `[04:30]` ~~<2NGEL> I am here.~~
 > `[04:30]` **\<BINGO>** jeezus christ, there you are. thought maybe you got spaced. what the hell happened out there, man?
-> `[04:31]` ==\&lt;2NGEL\&gt; Collateral.==
-> `[04:31]` ==\&lt;2NGEL\&gt; Explosive collateral.==
-> `[04:31]` ==\&lt;2NGEL\&gt; The weak burned. The strong endure.==
+> `[04:31]` ~~<2NGEL> Collateral.~~
+> `[04:31]` ~~<2NGEL> Explosive collateral.~~
+> `[04:31]` ~~<2NGEL> The weak burned. The strong endure.~~
 > `[04:31]` **\<BINGO>** yeah, sure, heavy stuff. next time just say you had to blow somethin' sky-high, daddyo.
 > `[04:31]` **\<BINGO>** now talk straight—are we in business or what?
-> `[04:32]` ==\&lt;2NGEL\&gt; Something has changed Bingo.==
-> `[04:32]` ==\&lt;2NGEL\&gt; We got some vermin after what we seek.==
-> `[04:32]` ==\&lt;2NGEL\&gt; They believe they build a tower high enough to steal heaven.==
-> `[04:32]` ==\&lt;2NGEL\&gt; Your job is to strike them down to hell.==
+> `[04:32]` ~~<2NGEL> Something has changed Bingo.~~
+> `[04:32]` ~~<2NGEL> We got some vermin after what we seek.~~
+> `[04:32]` ~~<2NGEL> They believe they build a tower high enough to steal heaven.~~
+> `[04:32]` ~~<2NGEL> Your job is to strike them down to hell.~~
 > `[04:32]` **\<BINGO>** You mean people are waltzing into the city?
 > `[04:32]` **\<BINGO>** look, i don't sweat competition, i'm a professional. But we didn't talk about sending people to this hellhole. That sounds like a circus i don't wanna buy tickets to.
-> `[04:32]` ==\&lt;2NGEL\&gt; Are you soft now, thief?==
+> `[04:32]` ~~<2NGEL> Are you soft now, thief?~~
 > `[04:32]` **\<BINGO>** soft? me? ha! you're funny, wings. I don't melt. but i gotta say… this whole gig feels like makin' a deal with the devil.
-> `[04:33]` ==\&lt;2NGEL\&gt; No.==
-> `[04:33]` ==\&lt;2NGEL\&gt; You are making a deal with the Angel.==
-> `[04:33]` ==\&lt;2NGEL\&gt; A devil deceives, tricks, whispers promises of gold while binding your throat in chains.==
-> `[04:33]` ==\&lt;2NGEL\&gt; He will carve you open, wire your nerves, and make you a machine of theft chaos in his lawful world.==
-> `[04:33]` ==\&lt;2NGEL\&gt; I speak only the truth.==
-> `[04:33]` ==\&lt;2NGEL\&gt; The angel's tongue shouts commanding truths of slaughter.==
-> `[04:33]` ==\&lt;2NGEL\&gt; His sword cuts down the enemy not because he hates, but because his God is stronger.==
-> `[04:33]` ==\&lt;2NGEL\&gt; A devil wants souls.==
-> `[04:33]` ==\&lt;2NGEL\&gt; I have no use for souls.==
+> `[04:33]` ~~<2NGEL> No.~~
+> `[04:33]` ~~<2NGEL> You are making a deal with the Angel.~~
+> `[04:33]` ~~<2NGEL> A devil deceives, tricks, whispers promises of gold while binding your throat in chains.~~
+> `[04:33]` ~~<2NGEL> He will carve you open, wire your nerves, and make you a machine of theft chaos in his lawful world.~~
+> `[04:33]` ~~<2NGEL> I speak only the truth.~~
+> `[04:33]` ~~<2NGEL> The angel's tongue shouts commanding truths of slaughter.~~
+> `[04:33]` ~~<2NGEL> His sword cuts down the enemy not because he hates, but because his God is stronger.~~
+> `[04:33]` ~~<2NGEL> A devil wants souls.~~
+> `[04:33]` ~~<2NGEL> I have no use for souls.~~
 > `[04:34]` **\<BINGO>** …you don't pull punches, wings.
 > `[04:34]` **\<BINGO>** i don't care what you use or don't use. As long as you keep your word to me and candy, as long as your broad can get us clearance outta this hellhole once the job's done. that's the only gospel i care to hear.
 > `[04:34]` **\<BINGO>** Thats the golden ticket I havent heard from you yet. I know you… I don't know allot, but word gets around on the street. Who you are, what you do up there. You want the best. well, dig it: bingo _is_ the best.
-> `[04:35]` ==\&lt;2NGEL\&gt; …==
-> `[04:35]` ==\&lt;2NGEL\&gt; Those who serve their god will reach heaven.==
-> `[04:35]` ==\&lt;2NGEL\&gt; But perhaps this is about more than your escape, thief.==
-> `[04:35]` ==\&lt;2NGEL\&gt; Perhaps this is about retribution.==
-> `[04:35]` ==\&lt;2NGEL\&gt; You hate him as much as you love her.==
+> `[04:35]` ~~<2NGEL> …~~
+> `[04:35]` ~~<2NGEL> Those who serve their god will reach heaven.~~
+> `[04:35]` ~~<2NGEL> But perhaps this is about more than your escape, thief.~~
+> `[04:35]` ~~<2NGEL> Perhaps this is about retribution.~~
+> `[04:35]` ~~<2NGEL> You hate him as much as you love her.~~
 > `[04:36]` **\<BINGO>** heh... don't get preachy, wings.
 > `[04:36]` **\<BINGO>** still… maybe we're singin' the same tune after all. But let me make a deal with _you_ then.
 > `[04:36]` **\<BINGO>** I'll kill an angel or a demon no problem, but I'm not gonna kill some randos who show up on my turf… but… what if I could trap them? Get 'em in a place they can't get out. Once the job is done, I'm out of here, and your the one they deal with.
 > `[04:37]` **\<BINGO>** Hell, maybe I can even make it _fun_ for them. Games, puzzles, a little carnival in my head. They think they're playin', but they're really just… stuck. Trapped in my consciousness until you're ready for 'em.
-> `[04:38]` ==\&lt;2NGEL\&gt; …==
-> `[04:38]` ==\&lt;2NGEL\&gt; Interesting.==
-> `[04:38]` ==\&lt;2NGEL\&gt; A labyrinth of the mind. A prison of thought.==
-> `[04:38]` ==\&lt;2NGEL\&gt; Very well, thief. Build your trap.==
-> `[04:38]` ==\&lt;2NGEL\&gt; But remember: when the job is complete, they are mine.==
-> `[05:00]` ==\&lt;2NGEL\&gt; Then prepare yourself.==
-> `[05:00]` ==\&lt;2NGEL\&gt; I am sending you the descriptions of the approaching party.==
-> `[05:00]` ==\&lt;2NGEL\&gt; Be ready.==
+> `[04:38]` ~~<2NGEL> …~~
+> `[04:38]` ~~<2NGEL> Interesting.~~
+> `[04:38]` ~~<2NGEL> A labyrinth of the mind. A prison of thought.~~
+> `[04:38]` ~~<2NGEL> Very well, thief. Build your trap.~~
+> `[04:38]` ~~<2NGEL> But remember: when the job is complete, they are mine.~~
+> `[05:00]` ~~<2NGEL> Then prepare yourself.~~
+> `[05:00]` ~~<2NGEL> I am sending you the descriptions of the approaching party.~~
+> `[05:00]` ~~<2NGEL> Be ready.~~
 > `[05:01]` **\<BINGO>** oh, i'm always ready, wings. always.
 > `[05:01]` **\<BINGO>** time to set the stage. let the games begin.
 >

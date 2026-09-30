@@ -2,9 +2,9 @@
 publish: true
 title: "Part 1: Error Message 3000"
 description: A stranger breaks into the crew's chat,
-created: 2026-09-30T03:29:35.888Z
-modified: 2026-09-30T03:29:35.888Z
-published: 2026-09-30T03:29:35.888Z
+created: 2026-09-30T04:42:08.601Z
+modified: 2026-09-30T04:42:08.601Z
+published: 2026-09-30T04:42:08.601Z
 ---
 
 It started with misterious channel in the discord. Anything the crew posted to the channel bounced back as invalid data, stamped with the same name every time. Then a stranger logged on and started talking in code.
@@ -15,7 +15,7 @@ Want to crack it yourself? The answers are folded up below the log.
 > `--- Wednesday, October 2, 2024 ---`
 >
 > `[19:30]` **\<Faisal>** gotta take this one for a spin on hinge
-> `[19:31]` ==\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS==
+> `[19:31]` ~~\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS~~
 > `[21:04:17]` _-!- Error Message 3000: Julius has been reviewed_
 > `[21:04:32]` _-!- \<UNKNOWN\_USER> has entered the chat_
 > `[21:04:45]` _**\<UNKNOWN\_USER> Khoor.**_
@@ -23,8 +23,8 @@ Want to crack it yourself? The answers are folded up below the log.
 > `[21:05:18]` _**\<UNKNOWN\_USER> Vhh brx vrrq.**_
 > `[21:05:30]` _-!- \<UNKNOWN\_USER> has left the chat_
 > `[23:44]` **\<Faisal>** Insane that boo has better spelling when sending alien gibberish
-> `[23:45]` ==\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS==
-> `[23:45]` ==\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS==
+> `[23:45]` ~~\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS~~
+> `[23:45]` ~~\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS~~
 >
 > `--- Thursday, October 3, 2024 ---`
 >
@@ -34,9 +34,9 @@ Want to crack it yourself? The answers are folded up below the log.
 > `[01:51]` **\<Shmamy>** Holy shit I am so excited
 > `[01:52]` **\<Clio>** (Well, I assume it is—but Boo called the last ARG t̴̅̈ḣ̸͛e̷̟͆-̸̂̚d̵̾͘á̷̈r̶͒k-web too, so :P)
 > `[01:52]` **\<Clio>** Completely different puzzle tho, so I'm stumped
-> `[10:12]` ==\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS==
-> `[10:12]` ==\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS==
-> `[10:12]` ==\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS (But still epic)==
+> `[10:12]` ~~\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS~~
+> `[10:12]` ~~\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS~~
+> `[10:12]` ~~\[ɪɴᴠᴀʟɪᴅ ᴅᴀᴛᴀ] ERROR MESSAGE 3000: JULIUS (But still epic)~~
 > `[10:15:03]` _-!- \<UNKNOWN\_USER> has entered the chat_
 > `[10:15:17]` _**\<UNKNOWN\_USER> Hyl fvb svvrpun av lualy aol slaaly aolu?**_
 > `[10:15:32]` _**\<UNKNOWN\_USER> Flho, aol pucpahapvu…**_
