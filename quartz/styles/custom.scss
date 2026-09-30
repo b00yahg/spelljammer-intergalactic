@@ -752,6 +752,21 @@ article img { border-radius: 0; }
   }
 }
 
+/* a bare YouTube link in a note (![](url)) becomes iframe.external-embed.youtube */
+iframe.external-embed.youtube {
+  @include sunken;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  box-sizing: border-box;
+  padding: 3px;
+  background: var(--w98-field);
+  border: 0;
+  border-radius: 0;
+  margin: 1.25rem 0;
+}
+
 /* a music embed sets its own height rather than a video aspect ratio */
 .audio-embed {
   @include sunken;
@@ -905,6 +920,194 @@ article img { border-radius: 0; }
   background-image: url("data:image/svg+xml;charset=utf-8,<svg width='16' height='14' xmlns='http://www.w3.org/2000/svg'><path fill='silver' d='M0 0h16v14H0z'/><path fill='%23fff' d='M0 0h16v1H0zM0 0h1v14H0z'/><path fill='%23dfdfdf' d='M1 1h14v1H1zM1 1h1v12H1z'/><path fill='%230a0a0a' d='M0 13h16v1H0zM15 0h1v14h-1z'/><path fill='gray' d='M1 12h14v1H1zM14 1h1v12h-1z'/><path fill-rule='evenodd' clip-rule='evenodd' fill='%23000' transform='translate(4 3)' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z'/></svg>");
   background-repeat: no-repeat;
   cursor: url("static/cursors/link.cur"), pointer;
+}
+
+/* --- 13c. The Dark Web: terminal callout -------------------------------- */
+/* > [!terminal] callouts render as a DOS screen inside the window.
+   `code` = timestamp, **bold** = player, ***bold italic*** = UNKNOWN_USER,
+   *italic* = join/leave events, ==highlight== = system errors. */
+
+.callout[data-callout="terminal"] > .callout-content {
+  @include sunken;
+  background: #000;
+  color: #c0c0c0;
+  font-family: var(--w98-mono);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 3px 0 0;
+  padding: 10px 12px;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+
+  & p { margin: 0 0 0.8em; color: #c0c0c0; }
+  & p, & strong, & em, & mark, & .text-highlight, & code {
+    font-family: var(--w98-mono) !important;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  & code { background: none; color: #808080; padding: 0; }
+  & strong { color: #55ffff; font-weight: 400; }
+  & em { color: #ffff55; font-style: normal; }
+  & em > strong,
+  & strong > em { color: #55ff55; font-style: normal; }
+  & mark, & .text-highlight { background: none !important; color: #ff5555; padding: 0; border-radius: 0; }
+  & > p:last-child { margin-bottom: 0; }
+  & > p:last-child > code:only-child { color: #c0c0c0; }
+  & > p:last-child > code:only-child::after {
+    content: "_";
+    animation: dos-blink 1s steps(1) infinite;
+  }
+}
+
+/* Answer box: raw HTML in the note. The input needs pattern + required.
+   Granted shows on :valid, denied shows once something wrong is typed. */
+.arg-console {
+  @include window;
+  margin: 1.5rem 0;
+  max-width: 520px;
+
+  & > .arg-console-title { @include titlebar; }
+
+  & > .arg-console-body {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & > input[type="text"] {
+      font-family: var(--w98-mono);
+      font-size: 15px;
+      padding: 6px 8px;
+    }
+  }
+
+  & .arg-granted,
+  & .arg-denied {
+    display: none;
+    @include status-sunken;
+    background: #000;
+    font-family: var(--w98-mono);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  & .arg-granted { color: #55ff55; }
+  & .arg-denied { color: #ff5555; }
+  & .arg-console-body > input:valid ~ .arg-granted { display: block; }
+  & .arg-console-body > input:invalid:not(:placeholder-shown) ~ .arg-denied { display: block; }
+}
+
+/* > [!file] callouts are recovered documents: a Win98 window around a
+   white sunken page. Markdown inside (headings, tables, lists) reads as the doc. */
+.callout[data-callout="file"] > .callout-content,
+.callout[data-callout="browser"] > .callout-content {
+  @include sunken;
+  background: var(--w98-field);
+  margin: 3px 0 0;
+  padding: 14px 18px;
+
+  & h4, & h5 {
+    font-family: var(--w98-doc);
+    margin: 1.1em 0 0.5em;
+  }
+  & h4 { font-size: 1.15rem; text-align: center; }
+  & h5 { font-size: 0.95rem; letter-spacing: 0.02em; }
+  & > h4:first-child + p { text-align: center; }
+  & table { font-size: 13px; width: 100%; }
+  & td:first-child { white-space: nowrap; font-weight: 700; }
+  & hr { margin: 2rem 0 0.3rem; width: 60%; }
+  & img { display: block; margin: 0 auto; max-width: 100%; }
+  & .callout { margin: 1rem 0 0; }
+}
+
+/* browser windows: early-2000s web pages, serif mastheads and headlines */
+.callout[data-callout="browser"] > .callout-content {
+  & h2, & h3, & h4 { font-family: "Times New Roman", Times, serif; }
+  & h4:first-child { font-size: 0.9rem; letter-spacing: 0.3em; text-align: left; color: #900; margin-top: 0; }
+  & h2 { font-size: 2rem; text-align: center; margin: 0.2em 0; border: 0; }
+  & h2 + p { text-align: center; }
+  & h3 { font-size: 1.35rem; margin-top: 1.6em; }
+}
+
+/* the Tablet: green phosphor terminal */
+.callout[data-callout="tablet"] {
+  & > .callout-content {
+    @include sunken;
+    background: #000;
+    color: #33ff66;
+    font-family: var(--w98-mono);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 3px 0 0;
+    padding: 10px 12px;
+    & p { color: #33ff66; margin: 0 0 0.8em; font-family: var(--w98-mono) !important; }
+    & > p:last-child { margin-bottom: 0; }
+    & code { background: none; color: #1f9c3f; padding: 0; font-family: inherit; font-size: inherit; }
+  }
+}
+
+/* forum posts: phpBB circa 2002 */
+.callout[data-callout="post"],
+.callout[data-callout="modpost"] {
+  background: #efefef;
+  box-shadow: none;
+  border: 1px solid #98aab1;
+  padding: 0;
+  margin: 0.6rem 0;
+
+  & > .callout-title {
+    background: #d1d7dc;
+    color: #000;
+    padding: 4px 8px;
+    border-bottom: 1px solid #98aab1;
+    &::after { display: none; }
+    & .callout-icon { display: none; }
+    & .callout-title-inner,
+    & .callout-title-inner p {
+      color: #333;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      -webkit-font-smoothing: auto;
+    }
+    & strong { color: #006699; font-size: 12px; }
+  }
+  & > .callout-content {
+    margin: 0;
+    padding: 8px 10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    & p, & li { font-family: Verdana, Arial, sans-serif !important; color: #222; }
+    & > p:first-child { font-size: 10px; color: #666; margin-bottom: 0.4em; }
+  }
+}
+.callout[data-callout="post"]:nth-of-type(even) { background: #dee3e7; }
+.callout[data-callout="modpost"] > .callout-title strong { color: #00aa00; }
+
+/* the game itself, embedded as a window */
+.game-window {
+  @include window;
+  margin: 1.5rem 0;
+
+  & > .game-window-title { @include titlebar; }
+
+  & > iframe {
+    @include sunken;
+    display: block;
+    width: 100%;
+    height: 760px;
+    margin-top: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 0;
+    background: #000;
+  }
+}
+
+@keyframes dos-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .callout[data-callout="terminal"] > .callout-content > p:last-child > code::after { animation: none; }
 }
 
 /* --- 14. Scrollbars ----------------------------------------------------- */

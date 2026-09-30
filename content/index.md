@@ -27,7 +27,7 @@ Welcome, players and spectators. This is where the notes live. Every session we 
 The campaign runs on more than recaps. These are the working parts of it, built to be used in character.
 
 - [Spamazon](https://b00yahg.github.io/spamazon/) is where the crew shops. In universe, same as everything else on it.
-- [Bingo's Mind](https://b00yahg.github.io/bingo-mind/) is a set of cryptic games, part of the campaign's ARG.
+- [Bingo's Mind](https://b00yahg.github.io/bingo-arg/) is a set of cryptic games, part of the campaign's ARG.
 - [Laughing Beholder Menu](https://b00yahg.github.io/laughing-beholder/) is the menu at the crew's home bar.
 - [Wildspace Generator](https://b00yahg.github.io/wildspace-generator/) builds solar systems off the official 2e rules.
 
