@@ -940,7 +940,7 @@ iframe.external-embed.youtube {
   overflow-wrap: anywhere;
 
   & p { margin: 0 0 0.8em; color: #c0c0c0; }
-  & p, & strong, & em, & mark, & .text-highlight, & code {
+  & p, & strong, & em, & mark, & .text-highlight, & del, & code {
     font-family: var(--w98-mono) !important;
     font-size: inherit;
     line-height: inherit;
@@ -951,6 +951,7 @@ iframe.external-embed.youtube {
   & em > strong,
   & strong > em { color: #55ff55; font-style: normal; }
   & mark, & .text-highlight { background: none !important; color: #ff5555; padding: 0; border-radius: 0; }
+  & del, & s { color: #ff5555; text-decoration: none; }
   & > p:last-child { margin-bottom: 0; }
   & > p:last-child > code:only-child { color: #c0c0c0; }
   & > p:last-child > code:only-child::after {

@@ -160,6 +160,10 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      # Folders first, except numbered "Part N" entries, which sort by number so a
+      # Part 4 folder lands after the Part 1-3 pages in The Dark Web.
+      sortFn: "(a, b) => { const an = a.displayName || '', bn = b.displayName || ''; const part = /^Part \\d/; if (a.isFolder === b.isFolder || (part.test(an) && part.test(bn))) { return an.localeCompare(bn, undefined, { numeric: true, sensitivity: 'base' }); } return a.isFolder ? -1 : 1; }"
     layout:
       position: left
       priority: 50
